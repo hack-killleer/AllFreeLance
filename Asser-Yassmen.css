@@ -1,0 +1,99 @@
+section.s-block.s-block--features.container .banner-entry {
+    height: unset !important;
+    width: unset !important;
+}
+.s-block--features__item {
+    background: #9c66ed;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.footer-is-light .store-footer .store-footer__inner {
+    background: #750ede;
+    color: white;
+}
+.s-product-card-image img.loaded {
+    background: white;
+}
+.s-product-card-vertical {
+    border: 1px solid #750ede;
+}
+.s-button-primary-outline {
+    color: white;
+    background: var(--color-primary);
+}
+.s-product-card-content-sub {
+    justify-content: center;
+    font-size: 1.1rem !important;
+    color: #750edd;
+}
+.s-product-card-content-title a{
+      color: #750edd;
+}
+.top-navbar {
+    background: linear-gradient(45deg, #7b36e6, #7b36e661, #823ee5);
+}
+/*/////////////////////////////////////////////// */ 
+body.index {
+    background: white !important;
+}
+[dir=rtl] salla-slider.photos-slider .swiper {
+    padding-right: 0rem !important;
+}
+/* mover banner///////////////// */ 
+  [dir=rtl] .carousel-slider .swiper {
+    padding-left: 0rem !important;
+}
+salla-slider.photos-slider .swiper-slide {
+    position: relative;
+   margin: 0px !important;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0rem;
+}
+.rounded-md {
+    border-radius: 0rem !important;
+}
+.swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl.swiper-backface-hidden {
+    padding: 0px;
+}
+section:first-of-type.s-block.s-block--photos-slider {
+    margin: 0px !important;
+}
+
+/* categoryyy//////////////// */ 
+.grid.md\:grid-cols-3.two-row.grid-flow-row.gap-3.sm\:gap-8{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lazy__bg.lazy.entered.loaded {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ .banner--fixed img {
+    background: #faebd700;
+}   
+
+.banner-entry {
+    width: 14%;
+    height: 300px !important;
+    background: #f9fafb00;
+}
+    
+/* Media Query for Mobile Devices */ 
+ @media (max-width: 480px) { 
+           .banner-entry {
+    width: 30%;
+     height: 130px !important;
+         background: #f9fafb00;
+    }
+  } 
+/* Media Query for low resolution  Tablets, Ipads */ 
+       
+@media (min-width: 481px) and (max-width: 767px) { 
+ .banner-entry {
+    width: 31%;
+    height: 177px !important;
+    background: #f9fafb00;
+    }
+ }
