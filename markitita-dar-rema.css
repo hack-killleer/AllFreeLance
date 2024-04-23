@@ -1,0 +1,108 @@
+.s-product-card-fit-height .s-product-card-image {
+    height: 11rem;
+    max-height: 20rem;
+}
+.s-product-card-vertical {
+    flex-direction: column;
+    border: 1px solid black;
+}
+.s-button-primary-outline {
+    color: white;
+    background: var(--color-primary);
+}
+.store-footer__inner:before {
+    content: "";
+    background: url(https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/EKApx/cbUOnf7sdFyplVVGOotZzSlQl9l1C05Y0wcs1R1Z.png);
+    display: block;
+    width: 100%;
+    height: 72px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+.footer-is-light .store-footer .store-footer__inner{
+    background: black !important;
+    color: white;
+    border-radius: 20px;
+}
+div#mainnav {
+    background: black;
+}
+.sicon-shopping-bag:before,.sicon-user-circle:before{
+color:#fff;
+}
+.top-navbar {
+    background: black;
+    color: white;
+}
+salla-contacts.s-contacts.hydrated {
+    display: none;
+}
+/* Add custom CSS styles below */ 
+body {
+    
+    background-color: white !important;
+}
+[dir=rtl] salla-slider.photos-slider .swiper {
+    padding-right: 0rem !important;
+}
+/* mover banner///////////////// */ 
+  [dir=rtl] .carousel-slider .swiper {
+    padding-left: 0rem !important;
+}
+salla-slider.photos-slider .swiper-slide {
+    position: relative;
+   margin: 0px !important;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0rem;
+}
+.rounded-md {
+    border-radius: 0rem !important;
+}
+.swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl.swiper-backface-hidden {
+    padding: 0px;
+}
+section:first-of-type.s-block.s-block--photos-slider {
+    margin: 0px !important;
+}
+
+/* categoryyy//////////////// */ 
+.grid.one-row.md\:grid-cols-2.grid-flow-row.gap-3.sm\:gap-8{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lazy__bg.lazy.entered.loaded {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ .banner--fixed img {
+    background: #faebd700;
+}   
+
+.banner-entry {
+    width: 47%;
+    height: 300px !important;
+    background: #f9fafb00;
+}
+    
+/* Media Query for Mobile Devices */ 
+ @media (max-width: 480px) { 
+           .banner-entry {
+    width: 48%;
+     height: 130px !important;
+         background: #f9fafb00;
+    }
+  } 
+/* Media Query for low resolution  Tablets, Ipads */ 
+       
+@media (min-width: 481px) and (max-width: 767px) { 
+ .banner-entry {
+    width: 47%;
+    height: 177px !important;
+    background: #f9fafb00;
+    }
+ }
