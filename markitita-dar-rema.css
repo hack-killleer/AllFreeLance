@@ -36,9 +36,7 @@ color:#fff;
     background: black;
     color: white;
 }
-salla-contacts.s-contacts.hydrated {
-    display: none;
-}
+ 
 /* Add custom CSS styles below */ 
 body {
     
@@ -88,6 +86,7 @@ section:first-of-type.s-block.s-block--photos-slider {
     height: 300px !important;
     background: #f9fafb00;
 }
+ 
     
 /* Media Query for Mobile Devices */ 
  @media (max-width: 480px) { 
