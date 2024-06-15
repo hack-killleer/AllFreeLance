@@ -94,41 +94,32 @@ footer.store-footer {
 `;
 document.head.appendChild(styleElement);
 
-// Create and append JavaScript code
-var scriptElement = document.createElement("script");
-scriptElement.textContent = `
+
 var animateCSSLink = document.createElement("link");
 animateCSSLink.rel = "stylesheet";
 animateCSSLink.href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
 document.head.appendChild(animateCSSLink);
 
 document.addEventListener("DOMContentLoaded", function() {
-    var sections = document.querySelectorAll('body.index section');
-    
-    function handleScroll() {
-        sections.forEach(function(section, index) {
-            var bounding = section.getBoundingClientRect();
-            if (bounding.top <= window.innerHeight && bounding.bottom >= 0) {
-                if (!section.classList.contains("animate__animated")) {
-                    if (index % 2 === 0) {
-                        section.classList.add("animate__animated", "animate__backInUp");
-                    } else {
-                        section.classList.add("animate__animated", "animate__lightSpeedInRight");
-                    }
+var sections = document.querySelectorAll('body.index section');
+function handleScroll() {
+    sections.forEach(function(section, index) {
+        var bounding = section.getBoundingClientRect();
+
+        if (bounding.top <= window.innerHeight && bounding.bottom >= 0) {
+            if (!section.classList.contains("animate__animated")) {
+                if (index % 2 === 0) {
+                    section.classList.add("animate__animated", "animate__backInUp");
+                } else {
+                    section.classList.add("animate__animated", "animate__lightSpeedInRight");
                 }
             }
-        });
-    }
+        }
+    });
+}
 
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-});
+handleScroll();
+window.addEventListener('scroll', handleScroll);
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const logo = document.querySelector('a.navbar-brand');
-    if (logo) {
-        logo.classList.add('heart-bomb-animation');
-    }
-});
-`;
-document.head.appendChild(scriptElement);
+
+                          
